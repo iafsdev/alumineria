@@ -1,5 +1,5 @@
 export default function TopBorder() {
   return (
-    <div></div>
+    <div className="top-border"></div>
   )
 }
