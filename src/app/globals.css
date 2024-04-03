@@ -90,3 +90,22 @@ main {
     height: 4vh;
   }
 }
+
+.div-registerForm{
+  height: 56vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.register-form{
+  height: 44vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-height: 720px) {
+    height: 28vh;
+  } 
+}
