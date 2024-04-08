@@ -1,9 +1,13 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { auth } from "@/auth/firebase"
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 
 export default function RegisterForm() {
 
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('');
@@ -14,7 +18,7 @@ export default function RegisterForm() {
       .then((userCredential) => {
           const user = userCredential.user;
           console.log(user);
-          navigate("/login")
+          router.push("/login")
       })
       .catch((error) => {
           const errorCode = error.code;
