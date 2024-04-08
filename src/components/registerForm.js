@@ -1,4 +1,6 @@
 export default function RegisterForm() {
+  
+
   return (
     <div className="div-registerForm">
       <h2 className="login-title">Registro</h2>
