@@ -1,8 +1,12 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { auth } from "@/auth/firebase"
 import { signInWithEmailAndPassword } from 'firebase/auth'
 
 export default function LoginForm() {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -11,7 +15,7 @@ export default function LoginForm() {
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
           const user = userCredential.user;
-          navigate("/register")
+          router.push("/new-order")
           console.log(user);
       })
       .catch((error) => {
@@ -19,6 +23,10 @@ export default function LoginForm() {
           const errorMessage = error.message;
           console.log(errorCode, errorMessage)
       });
+  }
+
+  const toRegister = (e) => {
+    router.push("/register")
   }
 
   return (
@@ -29,6 +37,7 @@ export default function LoginForm() {
         <input className="login-input" name="password" type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)}/>
         <button className="login-button" onClick={onLogin}>Ingresar</button>
       </form>
+      <button className='login-register-button' onClick={toRegister}>¿No tienes una cuenta?</button>
     </div>
   )
 }

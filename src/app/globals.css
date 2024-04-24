@@ -109,3 +109,9 @@ main {
     height: 28vh;
   } 
 }
+
+.login-register-button {
+  background: none;
+  border: none;
+  color: #777777;
+}
