@@ -1,17 +1,16 @@
-'use client'
-
-import { useRouter } from 'next/navigation'
+import TopBorder from "@/components/topBorder";
+import BottomBorder from "@/components/bottomBorder";
+import ProductForm from "@/components/productForm";
+import '../globals.css'
 
 export default function Home() {
-  const router = useRouter();
-
-  const toLogin = (e) => {
-    router.push("/login")
-  }
-
   return (
     <main>
-      <button onClick={toLogin}>Log in</button>
+      <TopBorder/>
+      <h2>Nuevo Producto</h2>
+      <ProductForm/>
+      <p>$</p>
+      <BottomBorder/>
     </main>
   );
 }
