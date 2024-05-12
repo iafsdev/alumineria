@@ -1,8 +1,8 @@
 export default function ListProducts() {
   return (
-    <div>
+    <div class="product-list">
       <ul>
-        <li>Puerta 2 x 2</li>
+        <li class="product-item">Puerta 2 x 2</li>
       </ul>
     </div>
   )

@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main>
       <TopBorder/>
-      <h2>Nuevo Producto</h2>
+      <h2 class="titles">Nuevo producto</h2>
       <ProductForm/>
-      <p>$</p>
+      <p class="precio">$</p>
       <BottomBorder/>
     </main>
   );

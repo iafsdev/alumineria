@@ -115,3 +115,96 @@ main {
   border: none;
   color: #777777;
 }
+
+.btnNuevo{
+    width: 30vh;
+    height: 7vh;
+    background-color: #1E88A9;
+    color: white;
+    border: none;
+    font-size: 1em;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.btnNuevo:hover {
+    background-color: #156582;
+}
+.div-service {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  border: 0vh solid #ccc;
+  margin-bottom: 1vh;
+}
+
+.titles{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 6vh;
+  margin-bottom: 1vh; 
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-select, .form-input, .form-button {
+  margin-bottom: 3vh; 
+  padding: 1vh; 
+  border: 0.2vh solid #ccc;
+  width: 50vh; 
+  font-size: 2.5vh;
+}
+
+.form-button {
+  background-color: #1E88A9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #156582;
+}
+
+.product-list {
+  font-family: 'Arial', sans-serif;
+}
+
+.product-item,.precio,.item {
+  font-size: 2.5vh;
+  width: 20%;
+  align-self: center;
+  font-weight: bold;
+  list-style-type: none; 
+  padding: 1vh;
+  border: 0.2vh solid #8fb4f6;
+  margin-bottom: 0.5vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.datosServicio{
+  font-size: 3.5vh;
+  width: 80%;
+  align-self: center;
+  font-weight: bold;
+  list-style-type: none; 
+  padding: 1vh;
+  border: 0.2vh solid #8fb4f6;
+  margin-bottom: 0.5vh;
+  background-color:#D3EFFF ;
+  font-family: 'Arial', sans-serif;
+}
+
+.product-item:hover {
+  background-color: #f0f0f0; 
+}
+
+
