@@ -10,7 +10,7 @@ export default function Home() {
       <h2>Nuevo Servicio</h2>
       <button>+ Nuevo Producto</button>
       <ListProducts/>
-      <p>$</p>
+      <p>$20,000</p>
       <button>Finalizar</button>
       <BottomBorder/>
     </main>
