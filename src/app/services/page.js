@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main>
       <TopBorder/>
-      <h2>Servicios</h2>
-      <button>+ Nuevo Servicio</button>
+      <h2 class="titles">Servicios</h2>
+      <button class="btnNuevo">Nuevo Servicio</button>
       <ListServices/>
       <BottomBorder/>
     </main>

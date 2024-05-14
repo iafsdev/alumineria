@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <main>
       <TopBorder/>
-      <h2>Nuevo Servicio</h2>
-      <button>+ Nuevo Producto</button>
+      <h2 class="titles">Nuevo Servicio</h2>
+      <button class="btnNuevo">Agregar Producto</button>
       <ListProducts/>
-      <p>$20,000</p>
-      <button>Finalizar</button>
+      <p class="precio">$20,000</p>
+      <button class="btnNuevo">Finalizar</button>
       <BottomBorder/>
     </main>
   );

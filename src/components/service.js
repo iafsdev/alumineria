@@ -25,9 +25,9 @@ export default function Service() {
 
   return (
     <div className="div-service">
-      <p>Fecha: 08/05/2024</p>
-      <p>Estado: Primera visita</p>
-      <p>$20,000</p>
+      <p class="datosServicio">Fecha: 08/05/2024</p>
+      <p class="datosServicio">Estado del servicio: Primera visita</p>
+      <p class="datosServicio">Precio: $20,000</p>
     </div>
   )
 }
