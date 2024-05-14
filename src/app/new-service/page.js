@@ -10,7 +10,7 @@ export default function Home() {
       <h2 class="titles">Nuevo Servicio</h2>
       <button class="btnNuevo">Agregar Producto</button>
       <ListProducts/>
-      <p class="precio">$</p>
+      <p class="precio">$20,000</p>
       <button class="btnNuevo">Finalizar</button>
       <BottomBorder/>
     </main>
